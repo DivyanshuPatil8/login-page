@@ -50,6 +50,9 @@
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      cursor: pointer;
  }
+ .input-hade button:hover{
+     background-color: rgb(0, 80, 80);
+ }      
 
  #fac-icon {
      width: 23px;
