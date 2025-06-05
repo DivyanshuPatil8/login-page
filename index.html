@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Heebo:wght@100..900&family=Protest+Guerrilla&family=Rowdies:wght@300;400;700&family=Signika:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/Formpage.css">
+</head>
+
+<body>
+    <section class="thala">
+        <!-- <div>
+            <img src="Screen Shot.png" alt="" srcset="" id="size-for">
+        </div> -->
+        <div class="image-sequence">
+            <!-- <img src="Screenshot .jpg" alt="Image 2" class="image">
+            <img src="Screenshot 2.jpg" alt="Image 3" class="image">
+            <img src="Screenshot 20.jpg" alt="Image 4" class="image"> -->
+            <div class="iphone">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="./img/Screenshot.jpg" alt="not found" class="image">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./img/Screenshot2.jpg" alt="not found" class="image">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./img/Screenshot3.jpg" alt="not found" class="image">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./img/Screenshot.jpg" alt="not found" class="image">
+                    </div>
+
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+            </div>
+
+            <script>
+                let index = 0;
+                slideshow();
+
+                function slideshow() {
+                    let i;
+                    let s = document.getElementsByClassName("mySlides");
+                    let d = document.getElementsByClassName("dot");
+                    for (i = 0; i < s.length; i++) {
+                        s[i].style.display = "none";
+                    }
+                    index++;
+                    if (index == s.length) {
+                        index = 1
+                    }
+                    for (i = 0; i == d.length; i++) {
+                        d[i].className = d[i].className.replace(" active", "");
+
+                    }
+                    s[index - 1].style.display = "block";
+                    d[index - 1].className += " active";
+                    setTimeout(slideshow, 3000);
+
+                }
+            </script>
+        </div>
+        <div>
+            <div class="start-insta">
+                <div>
+                    <img src="./img/instagram.png" alt="" id="logo-size">
+                </div>
+                <div class="input-hade">
+                    <div>
+                        <input type="text" placeholder="Phone Number,username or email Address">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <div>
+                        <button>Log in</button>
+                    </div>
+                    <div class="centered-label">
+                        <div class="line"></div>
+                        <div class="labe-text">OR</div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="import-item">
+                        <img src="./img/icons8-online-social-media-facebook-website-homescreen-logo-button-96.png" alt="./"
+                            id="fac-icon">
+                        <a href="">Log in with Facebook </a>
+                    </div>
+                    <div class="move">
+                        <a href="" id="for">Forgotten your password?</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sign">
+                <label>Don't have an account?</label>
+                <a href="">Sign up </a>
+            </div>
+
+            <div class="app">
+                <label> Get the app.</label>
+            </div>
+            <div class="gomic-size">
+                <div>
+                    <img src="./img/Google-Play.png" alt="" id="img-size1">
+                    <img src="./img/English.png" alt="" id="img-size">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
